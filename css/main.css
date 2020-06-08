@@ -53,7 +53,7 @@ box-shadow: 0px 0px 10px 0px black !important;
 
 .form{
   min-height: 100vh;
-  background:  linear-gradient(rgba(173, 233, 221, 0.9),rgba(94, 154, 88, 0.4)) ;
+  background:  linear-gradient(rgba(246, 246, 246, 0.3),rgba(161, 212, 226, 0.5)) ;
 }
 fieldset{
   border: 2px solid black;
