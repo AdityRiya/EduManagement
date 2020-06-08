@@ -1,0 +1,107 @@
+@media only screen and (max-width:1024px){
+  body{
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width:980px){
+  body{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width:720px){
+  body{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width:480px){
+  body{
+    font-size: 14px;
+  }
+@media only screen and (max-width:320px){
+  font-size: 12px;
+}
+}
+body{
+    font-family: 'Alegreya', serif;
+
+    font-family: 'PT Sans Narrow', sans-serif;
+ min-height: 100vh;
+}
+/* 1st page */
+.header{
+ min-height: 100vh;
+  background:linear-gradient(rgba(250, 252, 249, 0.9),rgba(94, 154, 88, 0.9)) ,url(../img/img-1244-copy-1527105676018-1554036868445.jpg)center/cover no-repeat fixed;
+}
+
+.login{
+position: absolute;
+top:15vh;
+background: rgb(219, 231, 223);
+padding: 30px;
+border-radius: 10px !important;
+box-shadow: 0px 0px 10px 0px black !important;
+}
+.nav-link{
+ color: black;
+ font: 1.5rem bolder !important;
+}
+.nav-link:hover{
+ color:red !important;
+}
+/* end of 1st page  */
+/* registration form */
+
+.form{
+  min-height: 100vh;
+  background:  linear-gradient(rgba(173, 233, 221, 0.9),rgba(94, 154, 88, 0.4)) ;
+}
+fieldset{
+  border: 2px solid black;
+}
+.jumbotron{
+  background: linear-gradient(rgba(248, 248, 248, 0.5),rgba(195, 221, 226, 0.4));
+}
+.personal-info{
+background: linear-gradient(rgba(248, 248, 248, 0.5),rgba(176, 228, 240, 0.4));
+}
+table, th,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td{
+  vertical-align: middle;
+}
+
+.board-result{
+margin-top: 7%;
+background: linear-gradient(rgba(248, 248, 248, 0.5),rgba(176, 228, 240, 0.4));
+}
+
+.clg-result{
+ background: linear-gradient(rgba(248, 248, 248, 0.5),rgba(176, 228, 240, 0.4));
+}
+.footer{
+  background: linear-gradient(rgba(248, 248, 248, 0.5),rgba(176, 228, 240, 0.4));
+  border: 2px solid black;
+  
+}
+
+
+#collegeResult a {
+    border-left-style: solid;
+    padding-right: 50px;
+    border-color: rgb(120, 113, 113);
+    color: rgb(120, 109, 66);
+    text-decoration: none;
+    padding-left: 50px;
+}
+
+#collegeResult a:hover {
+    color: rgb(230, 17, 17);
+}
+/* .table{
+  border: 2px solid black;
+}
+thead{
+  border: 1px solid black;
+} */
