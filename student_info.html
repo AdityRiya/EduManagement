@@ -16,37 +16,61 @@
 
 <body>
   <!-- main nav bar  -->
+
+
+  <div class="container-fuild">
+    <nav class="navbar navbar-light navbar-expand-lg navigation-clean-button fixed-top pt-3 text-capitalize">
+      <div>
+        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
+            navigation</span><span class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="nav navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="#"> menu 1</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#">menu 2</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#">menu 3</a></li>
+          </ul>
+
+        </div>
+    </nav>
+  </div>
+  <!-- main nav bar end -->
+  <!-- student profile title -->
   <section id="profile" class="container-fluid profile text-capitalize">
-
-    <div>
-      <nav class="navbar navbar-light navbar-expand-sm navigation-clean-button pt-3 text-capitalize">
-        <div>
-          <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
-              navigation</span><span class="navbar-toggler-icon"></span></button>
-
-          <div class="collapse navbar-collapse" id="navcol-1">
-            <ul class="nav navbar-nav">
-              <li class="nav-item active"><a class="nav-link" href="#"> menu 1</a></li>
-              <li class="nav-item active"><a class="nav-link" href="#">menu 2</a></li>
-              <li class="nav-item active"><a class="nav-link" href="#">menu 3</a></li>
-            </ul>
-
-          </div>
-      </nav>
-    </div>
-    <!-- main nav bar end -->
-    <!-- student profile title -->
     <div class="container text-center text-sm-left" style="margin-top: 10px;">
       <div class="jumbotron">
         <h1 class="display-5 text-center"><strong> student profile</strong></h1>
-        <nav class="nav profile">
-          <ul class="m-auto p-auto">
-            <!-- <a href="#parsonal-info" class="btn btn-secondary">personal info</a>
-            <a href="#boardResult" class="btn btn-secondary">Board result</a> -->
-            <a href="#clgResult" class="btn btn-secondary">collage result</a>
-            <a href="registration.html" class="btn btn-info active">edit profile</a>
-          </ul>
-        </nav>
+
+        <ul class=" text-center d-flex justify-content-around">
+          <!-- <a href="#parsonal-info" class="btn btn-secondary">personal info</a> -->
+          <a class="btn btn-secondary active"
+            onclick="replaceResult1('termResultTable','midTermResultTable','preTestResultTable','testResultTable','boardResult')">Board
+            result</a>
+          <div class="dropdown">
+            <button class="btn btn-secondary active dropdown-toggle" data-toggle="dropdown">
+              Collage Result
+            </button>
+            <div class="dropdown-menu bg-secondary">
+              <a href="#midTermResultTable" class="dropdown-item" id="a1"
+                onclick="replaceResult1('boardResult','termResultTable','preTestResultTable','testResultTable', 'midTermResultTable')"><b>
+                  Mid Term</b></a>
+              <a href="#termResultTable" class="dropdown-item"
+                onclick="replaceResult1('boardResult','midTermResultTable','preTestResultTable','testResultTable', 'termResultTable')"><b>
+                  term
+                  Year</b></a>
+              <a href="#preTestResultTable" class="dropdown-item"
+                onclick="replaceResult1('boardResult', 'midTermResultTable','termResultTable','testResultTable','preTestResultTable')"><b>
+                  Pre Test</b></a>
+              <a href="#teatResultTable" class="dropdown-item"
+                onclick="replaceResult1('boardResult', 'midTermResultTable','termResultTable','preTestResultTable','testResultTable')"><b>
+                  Test</b></a>
+
+
+            </div>
+          </div>
+          <!-- <a href="#clgResult" class="btn btn-secondary">collage result</a> -->
+          <a href="registration.html" class="btn btn-info active">edit profile</a>
+        </ul>
       </div>
     </div>
     <!-- student profile title end -->
@@ -103,63 +127,63 @@
     <!-- personal info end -->
     <!-- board result -->
     <section id="boardResult">
-      <div class="container m-auto">
-        <fieldset class="board-result">
-          <div class="col-12 col-sm-10 offset-sm-1">
+      <div class="container board-result mt-5">
 
-            <h2 class="text-center pt-1" id="jHeading"><strong>board result</strong> </h2>
+        <div class=" col-12 col-sm-10 offset-sm-1">
 
-          </div>
-          <div class="table-responsive container">
-            <table class="table text-center">
-              <thead class="table-success">
-                <tr>
-                  <th class="border-dark">registration no</th>
-                  <th class="border-dark">SSC</th>
-                  <th class="border-dark">JSC</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td rowspan="3" style="vertical-align: middle;">1234567</td>
-                  <td>
-                    <table class="table-borderless" style="width:100%;border: none;">
-                      <tr>
-                        <td>roll:</td>
-                        <td>123467</td>
-                      </tr>
-                      <tr>
-                        <td>board:</td>
-                        <td>dhaka</td>
-                      </tr>
-                      <tr>
-                        <td>GPA:</td>
-                        <td>5</td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td>
-                    <table class="table-borderless" style="width:100%;border: none;">
-                      <tr>
-                        <td>roll:</td>
-                        <td>123467</td>
-                      </tr>
-                      <tr>
-                        <td>board:</td>
-                        <td>dhaka</td>
-                      </tr>
-                      <tr>
-                        <td>GPA:</td>
-                        <td>5</td>
-                      </tr>
-                    </table>
-                  </td>
+          <h2 class="text-center pt-1" id="jHeading"><strong>board result</strong> </h2>
 
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </fieldset>
+        </div>
+        <div class="table-responsive container">
+          <table class="table text-center">
+            <thead class="table-success">
+              <tr>
+                <th class="border-dark">registration no</th>
+                <th class="border-dark">SSC</th>
+                <th class="border-dark">JSC</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="3" style="vertical-align: middle;">1234567</td>
+                <td>
+                  <table class="table-borderless" style="width:100%;border: none;">
+                    <tr>
+                      <td>roll:</td>
+                      <td>123467</td>
+                    </tr>
+                    <tr>
+                      <td>board:</td>
+                      <td>dhaka</td>
+                    </tr>
+                    <tr>
+                      <td>GPA:</td>
+                      <td>5</td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table class="table-borderless" style="width:100%;border: none;">
+                    <tr>
+                      <td>roll:</td>
+                      <td>123467</td>
+                    </tr>
+                    <tr>
+                      <td>board:</td>
+                      <td>dhaka</td>
+                    </tr>
+                    <tr>
+                      <td>GPA:</td>
+                      <td>5</td>
+                    </tr>
+                  </table>
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
       </div>
     </section>
 
@@ -270,7 +294,7 @@
           </div>
           <div class="row row-content justify-content-end" id="closeBtn">
             <a type="button" class="btn btn-outline-primary" id="closeClgRslt"
-              onclick="replaceResult('midTermResultTable', 'boardResult')">Close</a>
+              onclick="replaceResult1('midTermResultTable','termResultTable','preTestResultTable','testResultTable', 'boardResult')">Close</a>
 
           </div>
         </div>
@@ -386,7 +410,7 @@
 
           <div class="row row-content justify-content-end" id="closeBtn">
             <a type="button" class="btn btn-outline-primary" id="closeClgRslt"
-              onclick="replaceResult('termResultTable', 'boardResult')">Close</a>
+              onclick="replaceResult1('termResultTable','midTermResultTable','preTestResultTable','testResultTable','boardResult')">Close</a>
 
           </div>
         </div>
@@ -500,7 +524,7 @@
           </div>
           <div class="row row-content justify-content-end" id="closeBtn">
             <a type="button" class="btn btn-outline-primary" id="closeClgRslt"
-              onclick="replaceResult('preTestResultTable', 'boardResult')">Close</a>
+              onclick="replaceResult1('preTestResultTable', 'testResultTable','midTermResultTable','termResultTable','boardResult')">Close</a>
 
           </div>
         </div>
@@ -614,7 +638,7 @@
           </div>
           <div class="row row-content justify-content-end mb-4" id="closeBtn">
             <a type="button" class="btn btn-outline-primary" id="closeClgRslt"
-              onclick="replaceResult('testResultTable', 'boardResult')">Close</a>
+              onclick="replaceResult1('testResultTable','midTermResultTable','termResultTable','preTestResultTable','boardResult')">Close</a>
 
           </div>
         </div>
@@ -638,14 +662,18 @@
               <div class=" container text-center">
                 <p class="">
                   <a href="#midTermResultTable" class="clgRsltLink d-sm-block d-lg-inline" id="a1"
-                    onclick="replaceResult('boardResult', 'midTermResultTable')"><b> Mid Term</b></a>
+                    onclick="replaceResult1('boardResult','termResultTable','preTestResultTable','testResultTable', 'midTermResultTable')"><b>
+                      Mid Term</b></a>
                   <a href="#termResultTable" class="clgRsltLink d-sm-block d-lg-inline"
-                    onclick="replaceResult('boardResult', 'termResultTable')"><b> term
+                    onclick="replaceResult1('boardResult','midTermResultTable','preTestResultTable','testResultTable', 'termResultTable')"><b>
+                      term
                       Year</b></a>
                   <a href="#preTestResultTable" class="clgRsltLink d-sm-block d-lg-inline"
-                    onclick="replaceResult('boardResult', 'preTestResultTable')"><b> Pre Test</b></a>
+                    onclick="replaceResult1('boardResult', 'midTermResultTable','termResultTable','testResultTable','preTestResultTable')"><b>
+                      Pre Test</b></a>
                   <a href="#teatResultTable" class="clgRsltLink d-sm-block d-lg-inline"
-                    onclick="replaceResult('boardResult', 'testResultTable')"><b> Test</b></a>
+                    onclick="replaceResult1('boardResult', 'midTermResultTable','termResultTable','preTestResultTable','testResultTable')"><b>
+                      Test</b></a>
                 </p>
               </div>
             </div>

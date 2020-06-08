@@ -41,6 +41,10 @@ padding: 30px;
 border-radius: 10px !important;
 box-shadow: 0px 0px 10px 0px black !important;
 }
+.nav{
+  width: auto;
+  background-color:rgba(256,256,256,0.7);
+}
 .nav-link{
  color: black;
  font: 1.5rem bolder !important;
