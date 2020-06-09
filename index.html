@@ -24,32 +24,34 @@
 </head>
 
 <body>
-  <div>
-    <nav class="navbar navbar-light navbar-expand-lg navigation-clean-button fixed-top pt-3 text-capitalize"
-      id="navbar">
-      <div>
-        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
-            navigation</span><span class="navbar-toggler-icon"></span></button>
 
-        <div class="collapse navbar-collapse fixed" id="navcol-1">
-          <ul class="nav navbar-nav  d-flex justify-content-around">
-            <li class="nav-item active p-2"><a class="nav-link" href="#"> menu 1</a></li>
-            <li class="nav-item active p-2"><a class="nav-link" href="#">menu 2</a></li>
-            <li class="p-2"><a class="nav-item nav-link btn btn-primary" href="login.html">Log In</a></li>
-            <li class="nav-item active p-3">
-              <form class="form-inline">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-success" type="submit">Search</button>
-              </form>
-            </li>
-          </ul>
-        </div>
-    </nav>
-  </div>
+  <nav class="navbar navbar-light navbar-expand-lg navigation-clean-button fixed-top pt-3 text-capitalize " id="navbar">
+    <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
+        navigation</span><span class="navbar-toggler-icon"></span></button>
+
+    <div class="collapse navbar-collapse fixed justiy-content-between" id="navcol-1">
+      <ul class="nav navbar-nav mr-auto  mt-2 mt-lg-0">
+        <li class="nav-item active mr-4"><a class="nav-link" href="#"> menu 1</a></li>
+        <li class="nav-item active mr-4"><a class="nav-link" href="#">menu 2</a></li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <ul class="nav navbar-nav">
+          <li class="nav-item"> <a href="login.html" class="my-2 my-lg-0 mr-5 btn btn-lg btn-outline-primary">log
+              in</a>
+          </li>
+          <li class="nav-item"><input class="form-control mr-sm-2 " type="search" placeholder="Search"
+              aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </nav>
   <!-- home -->
   <!-- student profile title -->
-  <section id="profile" class="container-fluid profile text-capitalize">
-    <div class="container text-center text-sm-left" style="margin-top: 10px;">
+  <section id="profile" class=" profile text-capitalize">
+    <div class="text-center text-sm-left" style="margin-top: 10px;">
       <div class="jumbotron">
         <div>
           <h1 class="display-4 text-center" id="myDIV"><strong>Education management software </strong></h1>
