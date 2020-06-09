@@ -32,6 +32,21 @@
       0% {
         top: 300px;
       }
+
+    }
+
+    #resultLink a:hover {
+      background: rgb(33, 213, 233);
+      font-size: 110%;
+    }
+
+    #result button:hover {
+      background: rgb(33, 213, 233);
+      font-size: 110%;
+    }
+
+    #result2 a:hover {
+      font-size: 115%;
     }
   </style>
 </head>
@@ -48,10 +63,14 @@
               navigation</span><span class="navbar-toggler-icon"></span></button>
 
           <div class="collapse navbar-collapse" id="navcol-1">
-            <ul class="nav navbar-nav fixed">
-              <li class="nav-item active"><a class="nav-link" href="#"> menu 1</a></li>
-              <li class="nav-item active"><a class="nav-link" href="#">menu 2</a></li>
-              <li class="nav-item active"><a class="nav-link" href="#">menu 3</a></li>
+            <ul class="nav navbar-nav fixed d-flex justify-content-around">
+              <li class="nav-item active p-2"><a class="nav-link" href="#"> menu 1</a></li>
+              <li class="nav-item active p-2"><a class="nav-link" href="#">menu 2</a></li>
+              <li class="nav-item active p-2"><a class="nav-link" href="#">menu 3</a></li>
+              <li class="p-2"><a class="nav-item nav-link btn btn-info" href="login.html">Sign
+                  out</a></li>
+
+
             </ul>
 
           </div>
@@ -66,16 +85,16 @@
             <h1 class="display-4 text-center"><strong> student profile</strong></h1>
           </div>
 
-          <ul class=" text-center d-flex justify-content-around">
+          <ul class=" text-center d-flex justify-content-around" id="resultLink">
             <!-- <a href="#parsonal-info" class="btn btn-secondary">personal info</a> -->
             <a class="btn btn-secondary active"
               onclick="replaceResult1('termResultTable','midTermResultTable','preTestResultTable','testResultTable','boardResult')">Board
               result</a>
-            <div class="dropdown">
+            <div class="dropdown" id="result">
               <button class="btn btn-secondary active dropdown-toggle" data-toggle="dropdown">
                 Collage Result
               </button>
-              <div class="dropdown-menu bg-secondary">
+              <div class="dropdown-menu" style="background: rgb(137, 146, 155);">
                 <a href="#midTermResultTable" class="dropdown-item" id="a1"
                   onclick="replaceResult1('boardResult','termResultTable','preTestResultTable','testResultTable', 'midTermResultTable')"><b>
                     Mid Term</b></a>
@@ -685,7 +704,7 @@
               </div>
               <div class="row mt-5">
                 <div class=" container text-center">
-                  <p class="">
+                  <p class="" id="result2">
                     <a href="#midTermResultTable" class="clgRsltLink d-sm-block d-lg-inline" id="a1"
                       onclick="replaceResult1('boardResult','termResultTable','preTestResultTable','testResultTable', 'midTermResultTable')"><b>
                         Mid Term</b></a>

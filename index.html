@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/main.css">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=PT+Sans+Narrow:wght@400;700&display=swap"
+  rel="stylesheet">
+<style>
+  #myDIV {
+    animation: mymove 1.5s;
+  }
+
+  @keyframes mymove {
+    0% {
+      word-spacing: 60px;
+    }
+  }
+</style>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WELCOME TO THE PAGE </title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/all.css">
-  <link rel="stylesheet" href="css/main.css">
+  <title>HOME PAGE</title>
 </head>
 
 <body>
-
   <div>
-    <nav class="navbar navbar-light navbar-expand-lg navigation-clean-button fixed-top pt-3 text-capitalize">
+    <nav class="navbar navbar-light navbar-expand-lg navigation-clean-button fixed-top pt-3 text-capitalize"
+      id="navbar">
       <div>
         <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
             navigation</span><span class="navbar-toggler-icon"></span></button>
 
-        <div class="collapse navbar-collapse" id="navcol-1">
-          <ul class="nav navbar-nav fixed">
-            <li class="nav-item active"><a class="nav-link" href="student_info.html">Student Info</a></li>
-            <li class="nav-item active"><a class="nav-link" href="#">menu 2</a></li>
-            <li class="nav-item active"><a class="nav-link" href="#">menu 3</a></li>
+        <div class="collapse navbar-collapse fixed" id="navcol-1">
+          <ul class="nav navbar-nav  d-flex justify-content-around">
+            <li class="nav-item active p-2"><a class="nav-link" href="#"> menu 1</a></li>
+            <li class="nav-item active p-2"><a class="nav-link" href="#">menu 2</a></li>
+            <li class="p-2"><a class="nav-item nav-link btn btn-primary" href="login.html">Log In</a></li>
+            <li class="nav-item active p-3">
+              <form class="form-inline">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </li>
           </ul>
-
         </div>
     </nav>
   </div>
-  <header class="header">
+  <!-- home -->
+  <!-- student profile title -->
+  <section id="profile" class="container-fluid profile text-capitalize">
+    <div class="container text-center text-sm-left" style="margin-top: 10px;">
+      <div class="jumbotron">
+        <div>
+          <h1 class="display-4 text-center" id="myDIV"><strong>Education management software </strong></h1>
+          <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, animi.</p>
+        </div>
 
-    <div id="logInPg" class="container">
-
-      <div class="col-lg-6  m-auto col-sm-6 text-capitalize">
-        <form class="login">
-          <h1 class="display-5 ">logIn page</h1><br>
-          <div class="input-group mt-2 p-auto">
-            <div class="input-group-prepend">
-              <button class="btn btn-secondary fas fa-user" disabled type="button"> Username</button>
-            </div>
-            <input type="text" class="form-control" required placeholder="Type Your Name">
-          </div>
-          <div class="input-group mt-2">
-            <div class="input-group-prepend">
-              <button class="btn btn-secondary fas fa-lock" disabled type="button"> Password</button>
-            </div>
-            <input type="text" class="form-control" required placeholder="Type Your Password">
-          </div>
-
-          <button type="submit" class="btn btn-primary mt-5 active btn-block">Log In</button>
       </div>
-
     </div>
-    </form>
-    </div>
-  </header>
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/index.js"></script>
-
+    <!-- home end -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
 
 </body>
 
