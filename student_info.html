@@ -38,16 +38,16 @@
 
     #resultLink a:hover {
       background: rgb(33, 213, 233);
-      font-size: 110%;
+      font-size: 120%;
     }
 
     #result button:hover {
       background: rgb(33, 213, 233);
-      font-size: 110%;
+      font-size: 120%;
     }
 
     #result2 a:hover {
-      font-size: 115%;
+      font-size: 130%;
     }
   </style>
 </head>
@@ -57,7 +57,7 @@
   <!-- main nav bar  -->
 
 
-  <nav class="navbar navbar-light navbar-expand-sm navigation-clean-button fixed-top pt-1 text-capitalize " id="navbar">
+  <nav class="navbar navbar-light navbar-expand-md navigation-clean-button fixed-top pt-1 text-capitalize " id="navbar">
     <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
         navigation</span><span class="navbar-toggler-icon"></span></button>
 
@@ -83,14 +83,14 @@
 
         <ul class="text-center d-md-flex justify-content-around" id="resultLink">
 
-          <a class="btn btn-outline-secondary" href="#boardResult"
+          <a class="btn btn-outline-secondary m-2" href="#boardResult"
             onclick="replaceResult1('termResultTable','midTermResultTable','preTestResultTable','testResultTable','boardResult')">Board
             result</a>
           <div class="dropdown" id="result">
             <button class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
               Collage Result
             </button>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu m-2">
               <a href="#midTermResultTable" class="dropdown-item" id="a1"
                 onclick="replaceResult1('boardResult','termResultTable','preTestResultTable','testResultTable', 'midTermResultTable')"><b>
                   Mid Term</b></a>
@@ -106,7 +106,7 @@
                   Test</b></a>
             </div>
           </div>
-          <a href="registration.html" class="btn btn-outline-info">edit profile</a>
+          <a href="registration.html" class="btn btn-outline-info m-2">edit profile</a>
         </ul>
 
       </div>
